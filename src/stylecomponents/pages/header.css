@@ -1,0 +1,181 @@
+.main-header{
+    height: 99px;
+    width: 100%;
+    background: linear-gradient(90deg, #0051C4 0%, #00D3FF 95.68%);
+    position: absolute;
+    top: 0;
+    /* box-shadow: 0px 3px 25px rgba(31, 232, 34, 0.13); */
+    z-index: 10;
+}
+.logo{
+    color: #1fe822;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 38px;
+}
+.main-header .menu ul{
+    list-style: none;
+    margin: 0;
+}
+.main-header .menu ul li{
+    float: left;
+    margin: 0 3px;
+}
+.main-header .menu ul li a{
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    transition: color .2s ease;
+    cursor: pointer;
+}   
+.main-header .menu ul li:hover a{
+    background: var(--primary);
+    color: #fff;
+}   
+.user-login {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    margin-left: 50px;
+}
+.user-login img{
+    height: 30px;
+}
+.nav-child-list{
+    position: absolute;
+    top: 68px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 99, 198, 0.3);
+    border-radius: 8px;
+    padding: 5px 0;
+    margin: 0;
+    opacity: 0;
+}
+.nav-child-list li{
+    padding: 5px 10px;
+}
+
+.main-header .menu ul li:hover .nav-child-list{
+    opacity: 1;
+}
+/* ==================== Mobile menu ==================== */
+.mobile-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    padding-right: 20px;
+    max-width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    border-radius: 0px;
+    transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -webkit-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    -webkit-transform: translateX(101%);
+    -ms-transform: translateX(101%);
+    transform: translateX(101%);
+    background: linear-gradient(90deg, #0051C4 0%, #00D3FF 95.68%);
+    box-shadow: 0px 3px 25px rgba(31, 232, 34, 0.13);
+}
+
+
+.mobile-menu .menu-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #0063C6;
+    padding: 0px 0px;
+    z-index: 5;
+    box-shadow: -9px 0 14px 0px rgb(0 0 0 / 6%);
+}
+.mobile-menu-visible .mobile-menu .close-btn {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.mobile-menu .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 28px;
+    line-height: 30px;
+    width: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+.mobile-menu .nav-logo {
+    position: relative;
+    padding: 30px 25px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-menu .navigation {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: none;
+    padding-left: 20px;
+}
+.mobile-menu .navigation li:first-child {
+    border-top: 1px solid #ffffff;
+}
+.mobile-menu .navigation li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+}
+.mobile-menu .navigation li > a {
+    position: relative;
+    display: block;
+    line-height: 24px;
+    padding: 10px 25px 10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border: none;
+    letter-spacing: 0.08em;
+    /* border-radius: 4px; */
+}
+.mobile-menu .navigation li > a:hover{
+    background-color: #0063C6;
+    color: #fff;
+
+}
+.mobile-menu.mobile-menu-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.mobile-menu.mobile-menu-visible .menu-box {
+    opacity: 1;
+    visibility: visible;
+}

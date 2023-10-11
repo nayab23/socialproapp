@@ -1,0 +1,14 @@
+/* **************** Global Path **************** */
+@import './global/variable.css';
+@import './global/global.css';
+
+/* **************** Pages Path **************** */
+@import './pages/header.css';
+@import './pages/chat.css';
+
+/* **************** Font Awesom Icon **************** */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* **************** Font Family **************** */
+/* @import './font/urbane/font.css'; */
+

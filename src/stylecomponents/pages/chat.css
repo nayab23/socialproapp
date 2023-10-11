@@ -1,0 +1,97 @@
+/* chat box css */
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 13px 2px rgba(22,45,61,.08);
+    width:340px;
+    height: calc(100vh -  200px);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chat-header{
+    width:100%;
+    height: 80px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.avatar-wrapper .avatar{
+    height: 50px;
+    width: 50px;
+    border: 0.5px solid rgb(214, 212, 212);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+.avatar-wrapper .avatar img{
+    border-radius: 50%;
+}
+.avatar-wrapper .chatstatus{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #43b72a;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+.avatar-wrapper .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 0px;
+}
+.avatar-wrapper .status{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: HelveticaNeueW01-45Ligh;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.chat-body{
+    background: linear-gradient(90deg, #0051C4 0%, #00D3FF 95.68%);
+    width: 100%;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 15px;
+}
+.chat-footer{
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+}
+.chat-footer textarea{
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    height: 25px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+}
